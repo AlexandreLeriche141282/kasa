@@ -1,0 +1,18 @@
+.navigation{
+    font-size: 24px;
+    max-width: 1240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 50px 0;
+    ul{ 
+        display: flex;
+        width: 260px;
+        justify-content: space-between;
+        li{
+            color:$color-1;
+        }
+    }
+    
+}
