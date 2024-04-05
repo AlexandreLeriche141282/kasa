@@ -1,5 +1,6 @@
 .navigation{
     font-size: 24px;
+    font-weight: 500;
     max-width: 1240px;
     display: flex;
     justify-content: space-between;
@@ -12,6 +13,21 @@
         justify-content: space-between;
         li{
             color:$color-1;
+        }
+    }
+    .nav-active{
+        position: relative;
+
+        &::after{
+            content: "";
+            border: 1px;
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            background-color: $color-1;
+            bottom: 0px;
+            
+
         }
     }
     

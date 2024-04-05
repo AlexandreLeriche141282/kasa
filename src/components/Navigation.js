@@ -6,10 +6,10 @@ const Navigation = () => {
         <div className="navigation">
             <img src="./LOGO.svg" alt="Logo de l'agence de locations d'appartements" />
             <ul>
-                <NavLink to="/">
+                <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
                     <li>Accueil</li>
                 </NavLink>
-                <NavLink to="/about">
+                <NavLink to="/About" className={(nav) => (nav.isActive ? "nav-active" : "")}>
                     <li>A Propos</li>
                 </NavLink>
             </ul>
