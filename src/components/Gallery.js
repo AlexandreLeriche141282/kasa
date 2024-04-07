@@ -1,12 +1,25 @@
 import React from 'react';
+import Data from '../logement.json'
+import LogementCard from './LogementCard'
+console.log(Data);
 
 const Gallery = () => {
     return (
-        <main>
-          <div>
-            <h1>ffffffffffffffffffffffff</h1>
-        </div>  
-        </main>
+        <div className="gallery">
+            <div className="cardContainer">
+                {Data.map((data, id) => (
+                   <LogementCard key={id} data={data} />
+            ))}
+            </div>
+            
+                
+            
+            
+        </div>
+          
+                
+          
+        
         
     );
 };

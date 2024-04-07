@@ -1,25 +1,76 @@
 main{
    position: relative;
     margin: 0 auto;
-    max-width: 1240px; 
- .banner {
+    max-width: 1240px;
     
-
+    
+    .gallery{
+        
+        .cardContainer{
+        background: $color-4;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        row-gap: 58px;
+        padding: 58px 0;
+        margin: 43px 0;
+        border-radius: 25px;
+        .cardContent{
+            position: relative;
+            border-radius: 10px;
+            width: 340px;
+            height: 340px;
+            img{
+                width: 340px;
+                height: 340px;
+                object-fit: cover;
+                border-radius: 10px;
+                transition-duration: 0.5s;
+                filter: brightness(70%);
+                
+            &:hover{
+                transform: scale(1.05);
+                transition-duration:0.5s ;
+            }
+            
+        } 
+        p{
+           position: absolute; 
+           bottom: 20px;
+           padding-left: 10px;
+           background: transparent;
+           color: $color-2;
+           font-size: 18px;
+           font-weight: 600;
+           width: 100%;
+           transition-duration: 0.5s;
+                
+        } 
+        }
+             
+        }
+       .cardContent:hover p{
+        transform: scale(1.05);
+       } 
+        
+    }
+ .banner {
+    position: relative;
+    border-radius: 25px;
     img {
         width: 100%;
         height: 223px;
         object-fit: cover;
         border-radius: 25px;
-        filter: brightness(40%);
+        filter: brightness(50%);
 
     }
 
     .banner-title {
-        position: absolute; 
-        top: 40%;
+        position: absolute;
+        top: 50%;
         left: 50%;
-        transform: translateX(-50%);
-        font-size:calc(24px + 1.26vw);
+        transform: translate(-50%, -50%);
         width:100%;
         display: flex;
         justify-content: center;
@@ -30,8 +81,13 @@ main{
     -1px -1px 0 #000,
     1px -1px 0 #000;
         background-color: transparent;
-    }
 
-}   
+    }
+} 
+ .collapseContainer {
+    width: 1023px;
+    height: 298px;
+    background: red;
+} 
 }
 
