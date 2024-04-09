@@ -11,7 +11,7 @@ const About = () => {
             <Navigation />
             <main>
             <BannerAbout />  
-                <Collapse />
+            <Collapse />
             </main>
             <Footer />
         </div>
