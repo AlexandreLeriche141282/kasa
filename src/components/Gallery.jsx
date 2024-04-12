@@ -1,24 +1,31 @@
 import React from 'react';
-import Data from '../Data/logement.json'
-import LogementCard from './LogementCard'
-console.log(Data);
+import PropTypes from "prop-types"
+import { Link } from 'react-router-dom';
 
-const Gallery = () => {
+
+const Gallery = ({data}) => {
     return (
         <div className="gallery">
             <div className="cardContainer">
-                {Data.map((data, id) => (
-                    <LogementCard key={id} data={data} />
-                    
-                ))}
+            {data.map((data) => (
                 
-            </div>
+                    <div className="cardContent">
+                        <Link to={`/logement/${data.id}`} key={data.id}>
+                            <img src={data.cover} alt={data.title} />
+                            <p>{data.title}</p>
+                        </Link>
+                    </div>
               
-        </div>
+            ))}
+            </div>
+        </div> 
+        
           
     );
     
 };
-
+Gallery.propTypes = {
+    data: PropTypes.array.isRequired
+}
 export default Gallery;
 

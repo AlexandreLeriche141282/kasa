@@ -1,19 +1,24 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+// import React from 'react';
+// import { Link } from 'react-router-dom';
 
-const LogementCard = ({data}) => {
+
+
+
+// const LogementCard = ({data}) => {
+     
+//     return (
+        
+//             <Link to="/logement">
+//                 <div className="cardContent">
+//                     <img src={data.cover} alt={data.title} />
+//                     <p>{data.title}</p>
+//                 </div>
+//             </Link> 
+            
+        
     
-    return (
-        <NavLink to ="/logement">
-            <div className="cardContent">
-                <img src={data.cover} alt={data.title} />
-                <p>{data.title}</p>
-            </div>
-         </NavLink>     
-    );
-    
+//     );
+// };
 
-};
-
-export default LogementCard;
+// export default LogementCard;
 
