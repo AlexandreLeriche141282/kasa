@@ -11,12 +11,45 @@ const targetData = (id) => {
 
 const Logement = () => {
     const { id } = useParams();
-    const Data = targetData(id)
+    const Data = targetData(id);
+    const pictures = Data.pictures;
+    const starsColor = Data.rating;
+    
     return (
         
         <div>
-            <p>{id}</p>
-            <p>{Data.title}</p>
+            
+            {pictures.map((picture) => {
+                return (
+                    <img src={picture} alt={picture.title} key={picture} />
+                )
+            })
+            }
+            <div className="logementInfo">
+                    <h1>{Data.title}</h1>
+                    <p>{Data.location}</p>
+                <div className="tag">
+                    <p>{Data.tags}</p>
+                </div>
+                <div className="host">
+                    <p>{Data.host.name}</p>
+                    <img src={Data.host.picture} alt={Data.host.name} />
+                    <div className="stars">
+            {Array.from({ length: 5 }, (_, index) => (
+            <img
+            src={index < starsColor ? "/starColor.png" : "/starNocolor.png"}
+            key={index}
+            />
+    ))}
+</div>
+                    
+                </div>
+                <div className="buttonInfo">
+                    <button>Description{Data.description}</button>
+                    <button>Equipements{Data.equipments}</button>
+                </div>
+            </div>
+            
             <Navigation />
             
             <CarrousselLogement />
