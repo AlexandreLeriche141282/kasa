@@ -1,0 +1,32 @@
+.caroussel{
+    display: flex;
+    position: relative;
+    max-width: 1240px;
+    height: 415px;
+    margin: 0 auto; 
+    img{ 
+        width: 1240px;
+        height: 415px;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+.prev img{
+    width: 47px; 
+    height: 79px;
+    position: absolute;
+    left: 23px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent
+}
+.next img{
+    width: 47px; 
+    height: 79px;
+    position: absolute;
+    right: 23px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent
+}
+    
+}
