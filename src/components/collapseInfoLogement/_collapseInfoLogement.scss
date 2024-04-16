@@ -1,0 +1,63 @@
+.info {
+    display: flex;
+    justify-content: space-between;
+    width: 1240px;
+    margin: 0  auto 50px;
+
+    .buttonInfoContainer {
+        width: 582px;
+
+        .contentAbout {
+            color: $color-3;
+            font-size: 20px;
+            max-height: 0px;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+        }
+
+        .contentAbout.active {
+            max-height: 150px;
+            background-color: rgb(249, 247, 244);
+            
+        }
+
+        p {
+            background-color: rgb(249, 247, 244);
+            padding: 25px;
+            width: 582px;
+
+        }
+        .listEquipments  {
+            padding: 25px;
+            background-color: rgb(249, 247, 244);
+        }
+    }
+
+    .buttonInfo {
+        border-radius: 10px;
+        border: none;
+        width: 582px;
+        height: 52px;
+        background-color: $color-3;
+        color: $color-2;
+        text-align: left;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .arrowIcon {
+            background: transparent;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .rotate180 {
+            transform: rotate(180deg);
+
+        }
+    }
+
+
+}

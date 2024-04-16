@@ -1,8 +1,8 @@
 import React from 'react';
-import Navigation from '../components/Navigation';
-import BannerAbout from '../components/BannerAbout';
-import Footer from '../components/Footer';
-import Collapse from '../components/Collapse';
+import Navigation from '../components/navigation/Navigation';
+import BannerAbout from '../components/main/BannerAbout';
+import Footer from '../components/footer/Footer';
+import Collapse from '../components/main/Collapse';
 
 
 const About = () => {

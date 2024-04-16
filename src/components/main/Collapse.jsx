@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import aboutData from '../Data/about.json'; // import du fichier JSON
+import aboutData from '../../Data/about.json'; // import du fichier JSON
 
 const Collapse = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);

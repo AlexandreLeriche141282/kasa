@@ -1,6 +1,7 @@
 @import "./settings";
-@import "./components/navigation";
-@import "./components/main";
-@import "./components/footer";
-@import "./components/logement";
-@import "../components/caroussell/caroussel"
+@import "../components/navigation/navigation";
+@import "../components/main/main";
+@import "../components/footer/footer";
+@import "../components/caroussell/caroussel";
+@import "../components/logementDetails/logementDetails";
+@import "../components/collapseInfoLogement/collapseInfoLogement";

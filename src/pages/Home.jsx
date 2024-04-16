@@ -1,8 +1,8 @@
 import React from 'react';
-import Navigation from '../components/Navigation';
-import BannerHome from '../components/BannerHome';
-import Gallery from '../components/Gallery';
-import Footer from '../components/Footer';
+import Navigation from '../components/navigation/Navigation';
+import BannerHome from '../components/main/BannerHome';
+import Gallery from '../components/main/Gallery';
+import Footer from '../components/footer/Footer';
 import Data from '../Data/logement.json'
 
 
@@ -12,9 +12,7 @@ const Home = () => {
             <Navigation />
             <main>
                 <BannerHome />
-                
                 <Gallery data={Data} /> 
-            
             </main>
             <Footer />
         </div>
