@@ -11,18 +11,19 @@ const LogementDetails = ({ data }) => {
                 <h1>{data.title}</h1>
                     <p>{data.location}</p>
                     <div className="listTag">
-                    <div className='tag'>{data.tags[0]}</div>
-                    <div className='tag'>{data.tags[1]}</div>   
+                        {data.tags.map((tag, index) => (
+                            <div className='tag' key={index}>{tag}</div>
+                        ))}
                     </div>
-                    
                 </div>
+                
                 <div className="host">
                     <div className="hostName">
                         <div className="hostName1">
                           <p>{data.host.name} </p>  
                         </div>
                        
-                    <img className='pictureHost' src={data.host.picture} alt={data.host.name} /> 
+                    <img className='pictureHost' src={data.host.picture} alt={data.host.name}/> 
                     </div>
                     
                     <div className="stars">

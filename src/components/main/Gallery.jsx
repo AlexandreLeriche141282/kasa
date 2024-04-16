@@ -5,22 +5,19 @@ import { Link } from 'react-router-dom';
 
 const Gallery = ({data}) => {
     return (
-        <div className="gallery">
-            <div className="cardContainer">
-            {data.map((data) => (
-                
-                    <div className="cardContent">
-                        <Link to={`/logement/${data.id}`} key={data.id}>
-                            <img src={data.cover} alt={data.title} />
-                            <p>{data.title}</p>
-                        </Link>
-                    </div>
-              
-            ))}
-            </div>
-        </div> 
+    <div className="gallery">
+        <div className="cardContainer">
+            {data.map((dataItem) => ( 
+                <div className="cardContent" key={dataItem.id}>
+                    <Link to={`/logement/${dataItem.id}`}>
+                    <img src={dataItem.cover} alt={dataItem.title} />
+                    <p>{dataItem.title}</p>
+                    </Link>
+                </div>
+))}
+        </div>
+    </div> 
         
-          
     );
     
 };

@@ -14,6 +14,6 @@ footer{
     }
     p{
         background: transparent;
-        font-size: 24px;
+        font-size: calc(12px + (24 - 12) * ((100vw - 320px) / (1920 - 320)));
     }
 }
