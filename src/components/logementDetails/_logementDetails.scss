@@ -2,10 +2,19 @@
     max-width: 1240px;
     margin: 30px auto 20px;
     padding: 0 15px;
+    @media screen and (max-width:650px){
+        margin: 10px auto 0px;
+        
+        }
 
     .logementInfo {
         display: grid;
         grid-template-columns: 70% 30%;
+
+        @media screen and (max-width:650px){
+            display: block;
+            
+            }
 
         h1 {
             font-size: calc(18px + (36 - 18) * ((100vw - 320px) / (1920 - 320)));
@@ -46,12 +55,18 @@
             display: flex;
             flex-direction: column;
             align-items: flex-end;
+            @media screen and (max-width:650px){
+                align-items: center;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                }
+            
 
             .hostName {
                 display: flex;
-
+                align-items: center;
                 p {
-                    font-size: 18px;
+                    font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1920 - 320)));
                     color: $color-3;
                     font-weight: 500;
                     width: 100px;
@@ -63,8 +78,9 @@
 
                 .pictureHost {
                     border-radius: 50%;
-                    width: 64px;
-                    height: 64px;
+                    width: calc(32px + (64 - 32) * ((100vw - 320px) / (1920 - 320)));
+                    height: calc(32px + (64 - 32) * ((100vw - 320px) / (1920 - 320)));
+                    
                 }
             }
 
@@ -73,6 +89,7 @@
 
                 img {
                     padding: 5px;
+                    width: calc(20px + (36 - 20) * ((100vw - 320px) / (1920 - 320)));
                 }
             }
         }

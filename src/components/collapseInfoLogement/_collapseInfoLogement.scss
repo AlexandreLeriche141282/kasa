@@ -5,12 +5,19 @@
     max-width: 1240px;
     width: 100%;
     padding: 0 15px;
-    
     margin: 0  auto 50px;
+    @media screen and (max-width:650px){
+        flex-direction: column;
+        margin: 0  auto 20px;
+        }
 
     .buttonInfoContainer {
         width: 49%;
-        
+        @media screen and (max-width:650px){
+            width: 100%;
+            margin: 10px 0;
+            }
+    
         
         .contentAbout {
             color: $color-3;
@@ -22,13 +29,15 @@
 
         .contentAbout.active {
            height: 200px;
+           @media screen and (max-width:650px){
+            height: 150px;
+            
+            }
         }
 
         p {
             background-color: rgb(249, 247, 244);
             padding: 25px;
-            width: 582px;
-
         }
         .listEquipments{
             padding: 25px;
@@ -42,8 +51,7 @@
     .buttonInfo {
         border-radius: 10px;
         border: none;
-
-        height: 52px;
+        height: calc(30px + (52 - 30) * ((100vw - 320px) / (1920 - 320)));
         background-color: $color-3;
         color: $color-2;
         text-align: left;

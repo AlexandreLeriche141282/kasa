@@ -74,8 +74,6 @@ main {
 
     .banner {
         position: relative;
-        border-radius: 25px;
-
         img {
             width: 100%;
             height: calc(110px + (223 - 110) * ((100vw - 320px) / (1920 - 320)));
@@ -83,6 +81,9 @@ main {
             border-radius: 25px;
             filter: brightness(50%);
 
+            @media screen and (max-width:550px){
+                border-radius: 10px;
+                }
         }
 
         .banner-title {
@@ -125,10 +126,10 @@ main {
                 padding-right: 25px;
             }
             .contentAbout.active {
-            max-height: 150px;
+            max-height: 190px;
             background-color: rgb(249, 247, 244);
-            padding-top: 35px;
-            padding-bottom: 35px;
+            padding-top: 15px;
+            padding-bottom: 15px;
 }
         }
 
