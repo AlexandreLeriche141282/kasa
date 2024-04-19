@@ -1,0 +1,94 @@
+.info {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media screen and (max-width:650px) {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 20px;
+    }
+
+    .buttonInfoContainer {
+        &:first-child {
+            margin-right: 10px;
+            @media screen and (max-width:650px) {
+            margin: 0 auto;
+        }
+        }
+    
+        &:last-child {
+            margin-left: 10px;
+            @media screen and (max-width:650px) {
+                margin: 10px auto;
+            }
+        }
+        
+
+        @media screen and (max-width:650px) {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .buttonCollapse {
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            height: calc(30px + (52 - 30) * ((100vw - 320px) / (1920 - 320)));
+            background-color: $color-3;
+            color: $color-2;
+            text-align: left;
+            font-size: calc(13px + (18 - 13) * ((100vw - 320px) / (1920 - 320)));
+            font-weight: 700;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .arrowIcon {
+                background: transparent;
+                transition: transform 0.4s ease-in-out;
+                width: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
+                height: calc(9px + (14 - 9) * ((100vw - 320px) / (1920 - 320)));
+            }
+    
+            .rotate180 {
+                transform: rotate(180deg);
+    
+            }
+
+        }
+
+
+        .contentAbout {
+            color: $color-3;
+            font-size: calc(13px + (20 - 13) * ((100vw - 320px) / (1920 - 320)));
+            height: 0px;
+            overflow: hidden;
+            transition: height 0.5s ease-in-out;
+        }
+
+        .contentAbout.active {
+            height: 200px;
+
+            @media screen and (max-width:650px) {
+                height: 150px;
+
+            }
+        }
+
+        p {
+            background-color: rgb(249, 247, 244);
+            padding: 25px;
+        }
+
+        .listEquipments {
+            padding: 25px;
+            background-color: rgb(249, 247, 244);
+
+            div {
+                background-color: rgb(249, 247, 244);
+            }
+        }
+    }
+}

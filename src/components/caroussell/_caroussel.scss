@@ -16,12 +16,12 @@
         border-radius: 25px;
         @media screen and (max-width:550px){
             height: 255px;
-            
+            border-radius: 10px;
             }
     }
 .prev img{
-    width: calc(24px + (47 - 24) * ((100vw - 320px) / (1920 - 320)));
-    height: calc(24px + (79 - 24) * ((100vw - 320px) / (1920 - 320)));
+    width: calc(12px + (47 - 12) * ((100vw - 320px) / (1920 - 320)));
+    height: calc(18px + (79 - 18) * ((100vw - 320px) / (1920 - 320)));
     position: absolute;
     left: 23px;
     top: 50%;
@@ -30,8 +30,8 @@
     cursor: pointer;
 }
 .next img{
-    width: calc(24px + (47 - 24) * ((100vw - 320px) / (1920 - 320)));
-    height: calc(24px + (79 - 24) * ((100vw - 320px) / (1920 - 320)));
+    width: calc(12px + (47 - 12) * ((100vw - 320px) / (1920 - 320)));
+    height: calc(18px + (79 - 18) * ((100vw - 320px) / (1920 - 320)));
     position: absolute;
     right: 23px;
     top: 50%;

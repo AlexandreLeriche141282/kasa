@@ -1,0 +1,15 @@
+.banner {
+    position: relative;
+    img {
+        width: 100%;
+        height: calc(110px + (223 - 110) * ((100vw - 320px) / (1920 - 320)));
+        object-fit: cover;
+        border-radius: 25px;
+        filter: brightness(75%);
+
+        @media screen and (max-width:550px){
+            border-radius: 10px;
+            }
+    }
+
+}

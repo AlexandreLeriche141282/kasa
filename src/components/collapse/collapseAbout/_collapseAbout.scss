@@ -1,0 +1,50 @@
+.collapseContainer {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    @media screen and (max-width: 500px) {
+        width: 100%;
+              }
+
+    .collapseContent {
+        margin: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320))) 0;
+        .contentAbout{
+            color: $color-3;
+            font-size: calc(13px + (20 - 13) * ((100vw - 320px) / (1920 - 320)));
+            max-height: 0;
+            transition: 0.4s;
+            overflow: hidden;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        .contentAbout.active {
+        max-height: 190px;
+        background-color: rgb(249, 247, 244);
+        padding-top: 15px;
+        padding-bottom: 15px;
+}
+    }
+
+    button.buttonCollapse {
+        background-color: $color-3;
+        border: none;
+        width: 100%;
+        color: $color-2;
+        font-weight: 700;
+        border-radius: 5px;
+        font-size: calc(13px + (24 - 13) * ((100vw - 320px) / (1920 - 320)));
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px 10px 15px;
+        cursor: pointer;
+        .arrowIcon {
+            background: transparent;
+            transition: transform 0.4s ease-in-out;
+        }
+    }
+}
+
+.rotate180 {
+    transform: rotate(180deg);
+}

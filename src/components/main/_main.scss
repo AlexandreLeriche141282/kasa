@@ -20,6 +20,7 @@ main {
             background-color: $color-2;
             padding: 20px 0;
             row-gap: 20px;
+            margin:0;
               }
 
             .dataContainer {
@@ -46,8 +47,9 @@ main {
                     object-fit: cover;
                     border-radius: 10px;
 
-                    @media screen and (max-width: 700px) {
-                        width: 100%;
+                    @media screen and (max-width: 500px) {
+                    width: 300px;
+                    height: 300px;
                           }
 
                 }
@@ -72,87 +74,7 @@ main {
         }
     }
 
-    .banner {
-        position: relative;
-        img {
-            width: 100%;
-            height: calc(110px + (223 - 110) * ((100vw - 320px) / (1920 - 320)));
-            object-fit: cover;
-            border-radius: 25px;
-            filter: brightness(50%);
+    
 
-            @media screen and (max-width:550px){
-                border-radius: 10px;
-                }
-        }
-
-        .banner-title {
-            font-size: calc(24px + (48 - 24) * ((100vw - 320px) / (1920 - 320))); 
-            text-align: left;
-            padding-left: 10px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            color: $color-2;
-            text-shadow:
-                1px 1px 0 #000,
-                -1px 1px 0 #000,
-                -1px -1px 0 #000,
-                1px -1px 0 #000;
-            background-color: transparent;
-
-        }
-    }
-
-    .collapseContainer {
-        width: 100%;
-        margin: 0 auto;
-        margin-bottom: 20px;
-
-        .collapseContent {
-            margin: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320))) 0;
-            .contentAbout{
-                
-                color: $color-3;
-                font-size: calc(13px + (20 - 13) * ((100vw - 320px) / (1920 - 320)));
-                max-height: 0;
-                transition: 0.4s;
-                overflow: hidden;
-                padding-left: 25px;
-                padding-right: 25px;
-            }
-            .contentAbout.active {
-            max-height: 190px;
-            background-color: rgb(249, 247, 244);
-            padding-top: 15px;
-            padding-bottom: 15px;
-}
-        }
-
-        button.buttonCollapse {
-            background-color: $color-3;
-            border: none;
-            width: 100%;
-            color: $color-2;
-            border-radius: 5px;
-            font-size: calc(13px + (24 - 13) * ((100vw - 320px) / (1920 - 320)));
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px 10px 15px;
-            cursor: pointer;
-            .arrowIcon {
-                background: transparent;
-                transition: transform 0.4s ease-in-out;
-            }
-        }
-    }
-
-    .rotate180 {
-        transform: rotate(180deg);
-    }
+    
 }

@@ -5,7 +5,7 @@ import CarrousselLogement from '../components/caroussell/CarrousselLogement';
 import { useParams } from 'react-router-dom'
 import Data from '../Data/logement.json'
 import LogementDetails from '../components/logementDetails/LogementDetails';
-import CollapseInfoLogement from '../components/collapseInfoLogement/CollapseInfoLogement';
+import CollapseInfoLogement from '../components/collapse/collapseInfoLogement/CollapseInfoLogement';
 import ErrorPages from './ErrorPages';
 
 const targetData = (id) => {
@@ -15,8 +15,8 @@ const targetData = (id) => {
 const Logement = () => {
     const { id } = useParams();
     const Data = targetData(id);
-
     // Vérification si les données du logement sont valides
+
     if (!Data) {
         // Redirection vers la page d'erreur si les données ne sont pas trouvées
         return <ErrorPages />;
@@ -29,7 +29,10 @@ const Logement = () => {
             <Navigation />
             <CarrousselLogement pictures={pictures} />
             <LogementDetails data={Data} />
-            <CollapseInfoLogement data={Data} />
+            <main>
+               <CollapseInfoLogement data={Data} /> 
+            </main>
+            
             <Footer />
         </div>
     );

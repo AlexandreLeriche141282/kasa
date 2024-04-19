@@ -1,8 +1,8 @@
 import React from 'react';
 import Navigation from '../components/navigation/Navigation';
-import BannerAbout from '../components/main/BannerAbout';
+import BannerAbout from '../components/banner/bannerAbout/BannerAbout';
 import Footer from '../components/footer/Footer';
-import Collapse from '../components/main/Collapse';
+import CollapseAbout from '../components/collapse/collapseAbout/CollapseAbout';
 
 
 const About = () => {
@@ -11,7 +11,7 @@ const About = () => {
             <Navigation />
             <main>
             <BannerAbout />  
-            <Collapse />
+            <CollapseAbout />
             </main>
             <Footer />
         </div>
