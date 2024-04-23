@@ -11,6 +11,7 @@ const ErrorPages = () => {
                 <h2>Oups! La page que vous demandez n'existe pas.</h2>
                 <a href="/">Retournez sur la page d'accueil</a>
             </section>
+            
             <Footer />
         </div>
     );
