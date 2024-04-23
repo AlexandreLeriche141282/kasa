@@ -1,8 +1,8 @@
 import React from 'react';
 import Navigation from '../components/navigation/Navigation';
-import BannerAbout from '../components/banner/bannerAbout/BannerAbout';
 import Footer from '../components/footer/Footer';
 import CollapseAbout from '../components/collapse/collapseAbout/CollapseAbout';
+import Banner from '../components/banner/Banner';
 
 
 const About = () => {
@@ -10,7 +10,9 @@ const About = () => {
         <div>
             <Navigation />
             <main>
-            <BannerAbout />  
+            <Banner
+                imageSrc="./img/banner2.png" alt="photo des montagnes"
+            /> 
             <CollapseAbout />
             </main>
             <Footer />
