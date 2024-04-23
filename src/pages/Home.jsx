@@ -15,7 +15,7 @@ const Home = () => {
                 title="Chez vous, partout et ailleurs"
                 />
                 <div className="gallery">
-                 <Cards />   
+            <Cards />   
                 </div>
                 
             </main>
