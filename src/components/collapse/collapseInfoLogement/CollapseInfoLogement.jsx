@@ -1,6 +1,6 @@
 import React from 'react';
 import Collapse from '../Collapse'; // Import du composant Collapse
-
+import './_collapseInfoLogement.scss'
 const CollapseInfoLogement = ({ data }) => {
   return (
     

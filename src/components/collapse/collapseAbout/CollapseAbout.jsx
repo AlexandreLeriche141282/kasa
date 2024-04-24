@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import './_collapseAbout.scss'
 import aboutData from '../../../Data/about.json'; // import du fichier JSON
 import Collapse from '../Collapse';
-
 
 const CollapseAbout = () => {
   const [data, setData] = useState([]);

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './_caroussel.scss'
 
 const CarrousselLogement = ({ pictures }) => {
     // État pour suivre l'index de l'image actuellement affichée

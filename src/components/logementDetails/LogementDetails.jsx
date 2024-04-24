@@ -1,6 +1,6 @@
 import React from 'react';
 import Tags from '../tags/Tags';
-
+import './_logementDetails.scss'
 
 const LogementDetails = ({ data }) => {
     const starsColor = data.rating;
@@ -33,5 +33,7 @@ const LogementDetails = ({ data }) => {
         </div>
     );
 };
+
+
 
 export default LogementDetails;

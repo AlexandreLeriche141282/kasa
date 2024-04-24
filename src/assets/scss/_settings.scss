@@ -1,6 +1,6 @@
 @font-face {
     font-family: Montserrat;
-    src: url(../assets/fonts/Montserrat-VariableFont_wght.ttf);
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
   }
 
   $color-1:rgb(0,0,0);
@@ -21,5 +21,13 @@
     font-family: Montserrat;
   }
    
+  main {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1240px;
+    padding: 0 15px;
+
+}
+
   
   
