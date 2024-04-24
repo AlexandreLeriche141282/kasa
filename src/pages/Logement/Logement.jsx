@@ -8,7 +8,7 @@ import Data from '../../Data/logement.json'
 import LogementDetails from '../../components/logementDetails/LogementDetails';
 import CollapseInfoLogement from '../../components/collapse/collapseInfoLogement/CollapseInfoLogement';
 import ErrorPages from '../ErrorPages/ErrorPages';
-import Tags from '../../components/tags/Tags';
+
 
 const targetData = (id) => {
     return Data.find((Data) => Data.id === id);
@@ -31,9 +31,11 @@ const Logement = () => {
             <Navigation />
             <CarrousselLogement pictures={pictures} />
             <LogementDetails data={Data} />
+                
+           
+                
             <main>
-                <CollapseInfoLogement data={Data} />
-               <Tags /> 
+            <CollapseInfoLogement data={Data} />
             </main>
             
             <Footer />

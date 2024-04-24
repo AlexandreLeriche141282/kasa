@@ -11,7 +11,12 @@ const LogementDetails = ({ data }) => {
                 <div className="logementName">
                     <h1>{data.title}</h1>
                     <p>{data.location}</p>
-                    <Tags tags={data.tags} />
+                    <div className="listTag">
+                    {Array.isArray(data.tags) && data.tags.map((tag, index) => (
+                    <Tags key={index} tag={tag} /> 
+        ))}
+                    </div>
+                    
                 </div>
 
                 <div className="host">

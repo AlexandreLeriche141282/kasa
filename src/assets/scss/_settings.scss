@@ -1,12 +1,13 @@
+$color-1:rgb(0,0,0);
+$color-2:rgb(255,255,255);
+$color-3:#ff6060;
+$color-4:#e5e5e5;
+
 @font-face {
     font-family: Montserrat;
     src: url(../fonts/Montserrat-VariableFont_wght.ttf);
   }
 
-  $color-1:rgb(0,0,0);
-  $color-2:rgb(255,255,255);
-  $color-3:#ff6060;
-  $color-4:#e5e5e5;
   
   * {
     padding: 0;
@@ -15,6 +16,7 @@
     text-decoration: none;
     list-style-type: none;
     background:$color-2;
+    
   }
 
   body{
