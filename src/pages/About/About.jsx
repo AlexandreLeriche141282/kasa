@@ -4,7 +4,7 @@ import Navigation from '../../components/navigation/Navigation';
 import Footer from '../../components/footer/Footer';
 import CollapseAbout from '../../components/collapse/collapseAbout/CollapseAbout';
 import Banner from '../../components/banner/Banner';
-
+import bannerAbout from './banner2.png'
 
 const About = () => {
     return (
@@ -12,7 +12,7 @@ const About = () => {
             <Navigation />
             <main>
             <Banner
-                imageSrc="./img/banner2.png" alt="photo des montagnes"
+                imageSrc={bannerAbout} alt="photo des montagnes"
             /> 
                 <CollapseAbout />
                 

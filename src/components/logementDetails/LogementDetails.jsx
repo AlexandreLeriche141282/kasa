@@ -1,6 +1,8 @@
 import React from 'react';
 import Tags from '../tags/Tags';
 import './_logementDetails.scss'
+import starColor from './starColor.png'
+import starNoColor from './starNocolor.png'
 
 const LogementDetails = ({ data }) => {
     const starsColor = data.rating;
@@ -30,7 +32,7 @@ const LogementDetails = ({ data }) => {
 
                     <div className="stars">
                         {Array.from({ length: 5 }, (_, index) => (
-                            <img src={index < starsColor ? "/img/starColor.png" : "/img/starNocolor.png"} key={index} />
+                            <img src={index < starsColor ? starColor : starNoColor} key={index} />
                         ))}
                     </div>
                 </div>
