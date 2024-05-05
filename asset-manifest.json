@@ -1,14 +1,15 @@
 {
   "files": {
     "main.css": "/kasa/static/css/main.cc3d7e60.css",
-    "main.js": "/kasa/static/js/main.eebd6222.js",
+    "main.js": "/kasa/static/js/main.743a8352.js",
     "static/media/Montserrat-VariableFont_wght.ttf": "/kasa/static/media/Montserrat-VariableFont_wght.7e687123cd4528224ce5.ttf",
+    "static/media/LOGO.svg": "/kasa/static/media/LOGO.a5783b4cef26b8023cc300291492bf29.svg",
     "index.html": "/kasa/index.html",
     "main.cc3d7e60.css.map": "/kasa/static/css/main.cc3d7e60.css.map",
-    "main.eebd6222.js.map": "/kasa/static/js/main.eebd6222.js.map"
+    "main.743a8352.js.map": "/kasa/static/js/main.743a8352.js.map"
   },
   "entrypoints": [
     "static/css/main.cc3d7e60.css",
-    "static/js/main.eebd6222.js"
+    "static/js/main.743a8352.js"
   ]
 }
