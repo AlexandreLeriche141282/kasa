@@ -5,6 +5,7 @@ import Footer from '../../components/footer/Footer';
 import Banner from '../../components/banner/Banner';
 import Card from '../../components/card/Card';
 import data from '../../Data/logement.json'
+import bannerHome from './banner1.jpg'
 
 const Home = () => {
     return (
@@ -12,7 +13,7 @@ const Home = () => {
             <Navigation />
             <main>
             <Banner
-                imageSrc="./img/banner1.jpg"
+                imageSrc={bannerHome}
                 title="Chez vous, partout et ailleurs"
                 />
                 <div className="gallery">
