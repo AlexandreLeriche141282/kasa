@@ -10,7 +10,7 @@ const ErrorPages = () => {
             <section>
                 <h1>404</h1>
                 <h2>Oups! La page que vous demandez n'existe pas.</h2>
-                <a href="/home">Retournez sur la page d'accueil</a>
+                <a href="/kasa">Retournez sur la page d'accueil</a>
             </section>
             
             <Footer />
